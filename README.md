@@ -1,4 +1,4 @@
-Vidéo #4 Liste
+# Vidéo #4 Liste
 
 .pop(y) permet de retirer un élèment d'une liste 
 .extend(["x,x"]) permet étendre la liste et de rajouter plusieurs valeurs
@@ -19,37 +19,37 @@ print(text)
 
 print("Salut {}, ton email est {} et ton mot de passe est {}".format(text[1], text[0], text[2]))
 
-TP4
+# TP4
 from random import shuffle
  
-# Générateur de phrases
-# demander en console une chaine de la forme "mot1/mot2/mot3/mot4"
+* Générateur de phrases
+* demander en console une chaine de la forme "mot1/mot2/mot3/mot4"
 text = input("Entrer une chaine de la forme mot1/mot2/mot3/mot4")
  
-# transformer cette chaine en liste
+* transformer cette chaine en liste
 mot = text.split("/")
  
-# la melanger
+* la melanger
 shuffle(mot)
  
-# recuperer le nombre d'elements
+* recuperer le nombre d'elements
 mot_len = len(mot)
  
-# si le nombre d'élements de cette liste est inferieur à 10
+* si le nombre d'élements de cette liste est inferieur à 10
 if mot_len < 10:
-  # afficher les deux premiers mots
+  * afficher les deux premiers mots
   print(mot[0], mot[1])
   
-# si le nombre d'éements est superieur ou égal à 10
+* si le nombre d'élements est superieur ou égal à 10
 else:
-  # afficher les 3 derniers
+  * afficher les 3 derniers
   print(mot[mot_len - 1], mot[mpot_len - 2], mot[mot_len - 3])
 
-Vidéo #5 Les boucles
+# Vidéo #5 Les boucles
 
 for....in.....: permet de crée un boucle d'une valeur de départ jusqu'a une valeur d'arrivé
 range(1, 9) permet de faire un intervalle
-# création d'une boucle for in range!
+ * création d'une boucle for in range!
 for client in range(1, 9):
     print("vous êtes le client", client)
 #dernière valeur exclue 
